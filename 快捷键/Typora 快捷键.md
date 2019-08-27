@@ -93,5 +93,13 @@ x 	public static void main(String agrs[]){    
 
 我想建立一个批注[^注释]
 
+### （6） 页内跳转
+
+​	按如下格式编写需跳转的代码，Ctrl 加鼠标左键即可
+
+<a href=\"要跳转的路径\">RBAC\</a>
+
+<a href="#5、插入">RBAC</a>
+
 
 
