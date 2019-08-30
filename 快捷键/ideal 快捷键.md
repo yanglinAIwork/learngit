@@ -28,15 +28,15 @@
 
     - 如果没有设置测试源根，则会造成我上述的问题，生成的test文件和文件会在同一文件夹下。
 
-      > ![IDEA 自动生成Junit进行单元测试](https://s1.51cto.com/images/blog/201806/29/ecd21f912eefe871099665cdf8e8334e.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
+      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12.jpg)
 
     - 通过配置Content Root 【新增一个test文件夹在根目录下，并点击Mark as - Tests按钮，完成Add Content Root】
 
-      > ![IDEA 自动生成Junit进行单元测试](https://s1.51cto.com/images/blog/201806/29/135adbbe170669fe993fd74390bacc77.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
+      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12-2.jpg)
 
     #### 最后效果如下
 
-    > ![IDEA 自动生成Junit进行单元测试](https://s1.51cto.com/images/blog/201806/29/095e526113cc465e8db8f18aed639128.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
+    > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12-3.jpg)
 
 13. 字符串转换大小写 alt +m
 
