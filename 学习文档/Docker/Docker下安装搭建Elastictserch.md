@@ -136,7 +136,7 @@ docker run -d --name es_admin -p 9100:9100 mobz/elasticsearch-head:5
 
 ​	elasticsearch-head插件在安装x-pack插件之后就无法使用，原因是因为elastic公司在x-pack中加入了安全模块(security机制),就会出现下面的情况，如图：
 
-![1558076848157](D:\Typora文档\文档\学习文档\Docker\elasticsearch-head-error.png)
+![1558076848157](F:\GitDepository\学习文档\Docker\images\elasticsearch-head-error.png)
 
 ​	解决方案：
 

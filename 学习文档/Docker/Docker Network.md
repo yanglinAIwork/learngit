@@ -26,7 +26,7 @@
 
 ​	与docker0类似，我们可以自定义bridge网络，通过使用自定义bridge网络，我们就可以实现在一台host上的多个container之间的通信。他的网络模型如下(图片来自docker官网):
 
-![img](D:\Typora文档\文档\学习文档\Docker\DockerNetworkBridge.png)
+![img](F:\GitDepository\学习文档\Docker\images\DockerNetworkBridge.png)
 
 #### 2、docker_gwbridge
 

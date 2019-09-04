@@ -22,7 +22,7 @@
 
 ​		`RBAC`原理：`RBAC` 授权策略会创建一系列的 `Role` 和 `ClusterRole` 来绑定相应的资源实体（serviceAccount 或 group），以此来限制其对集群的操作。每一个 Role 都基于 Create, Read, Update, Delete（CRUD）模型来构建，并使用“动词”来应用相应的权限。例如，动词 `get` 表示能够获取特定资源的详细信息。如果你想获取对 `Secrets` 的访问权限，可以创建如下的 ClusterRole：
 
-![Kubernetes](F:\GitDepository\学习文档\Spring Cloud\Kuberneters-1.jpg)
+![Kubernetes](F:\GitDepository\学习文档\Spring Cloud\baseImages\Kuberneters-1.jpg)
 
 ---
 
@@ -46,7 +46,7 @@
  	3. 许可（Permisson）
  	4. 会话（Session）
 
-![1566811580876](F:\GitDepository\学习文档\Spring Cloud\RBAC0.png)
+![1566811580876](F:\GitDepository\学习文档\Spring Cloud\baseImages\RBAC0.png)
 
 ---
 
@@ -54,7 +54,7 @@
 
 ​	RBAC1是对RBAC0的扩展，是RBAC的角色分层模型，RBAC1引入了角色继承概念，有了继承就有了上下级的包含关系。
 
-![1566811977451](F:\GitDepository\学习文档\Spring Cloud\RBAC1.png)
+![1566811977451](F:\GitDepository\学习文档\Spring Cloud\baseImages\RBAC1.png)
 
 ---
 

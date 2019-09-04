@@ -75,7 +75,7 @@ cd config
 vi application.properties
 ~~~
 
-![img](D:\Typora文档\文档\学习文档\Docker\DockerNacosMysql.png)
+![img](F:\GitDepository\学习文档\Docker\images\DockerNacosMysql.png)
 
 注：把db.url.1这段配置注释掉
 

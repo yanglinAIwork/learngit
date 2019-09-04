@@ -58,7 +58,7 @@
 
 输入 “!” + [图片标题] + (图片链接)
 
-![插图](https://img-blog.csdn.net/20180414232539825?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21pbmd6aHVvXzEyNg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![插图](F:\GitDepository\快捷键\images\插入图片.gif)
 
 ### （2）链接
 

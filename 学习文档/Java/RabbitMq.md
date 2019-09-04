@@ -18,7 +18,7 @@
 
 ​	安装完成后，查看环境变量，如下图
 
-​	![环境变量图片](https://images2015.cnblogs.com/blog/784082/201609/784082-20160923235447637-1807926011.png)	
+​	![环境变量图片](F:\GitDepository\学习文档\Java\baseImages\Erlang-home.png)	
 
 ### 二、安装RabbitMQ
 
@@ -257,6 +257,6 @@ Exception in thread "main" com.rabbitmq.client.AuthenticationFailureException: A
 
 这是因为Rabbit里的queue 没有 注解@RabbitListener(queues = "namedQueue")  queues的实例
 
-　　　　解决方法：![技术分享图片](http://image.mamicode.com/info/201806/20180629191634973488.png)
+　　　　解决方法：![技术分享图片](F:\GitDepository\学习文档\Java\baseImages\rabbit-queue.png)
 
 　　添加监听的queues名称，保存  重启 。OK

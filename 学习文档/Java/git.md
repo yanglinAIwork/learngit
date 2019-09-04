@@ -150,7 +150,7 @@ git checkout -- test.txt
 
 ​	首先，登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：
 
-![github-create-repo-1](https://www.liaoxuefeng.com/files/attachments/919021631860000/0)
+![github-create-repo-1](F:\GitDepository\学习文档\Java\baseImages\添加远程git.png)
 
 ​	在Repository name填入`learngit`，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：
 

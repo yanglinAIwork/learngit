@@ -555,7 +555,7 @@ public class TestController {
 
 ​	配置git的webhook ,当git端配置发生改变，自动调用/bus-refresh接口
 
-![img](https://img-blog.csdnimg.cn/20181104224113454.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d0ZG1fMTYwNjA0,size_16,color_FFFFFF,t_70)
+![img](F:\GitDepository\学习文档\Spring Cloud\baseImages\webhook.png)
 
 
 
@@ -565,7 +565,7 @@ public class TestController {
 
 ​	使用RabbitMQ时，本地环境不需要配置mq，但是需要启动mq，Springboot会自动连接本地mq，后面客户端也是，如果是线上环境的话，必须要进行配置,原因看看SpringCloud bus如下说明：
 
-![img](https://img-blog.csdnimg.cn/20181104225008558.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d0ZG1fMTYwNjA0,size_16,color_FFFFFF,t_70)
+![img](F:\GitDepository\学习文档\Spring Cloud\baseImages\webhook-readme.png)
 
 ---
 

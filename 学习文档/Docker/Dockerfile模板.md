@@ -18,3 +18,4 @@ CMD python app.py
 - 指定工作目录为/code
 - 安装python需要的库：flask, redis
 - 容器执行命令 python app.py
+

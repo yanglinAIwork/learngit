@@ -16,7 +16,7 @@ eureka提供了region和zone两个概念来进行分区，这两个概念均来�
 
 #### 3、部署示例
 
-![img](D:\Typora文档\文档\学习文档\Spring Cloud\Eureka-Zone-region.png)
+![img](F:\GitDepository\学习文档\Spring Cloud\baseImages\Eureka-Zone-region.png)
 
 ​	如上图所示，有一个region:beijing，下面有zone-1和zone-2两个分区，每个分区内有一个注册中心Eureka Server和一个服务提供者Service。我们在zone-1内创建一个
 

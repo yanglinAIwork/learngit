@@ -36,7 +36,7 @@ consul agent -dev
 
 启动成功，在浏览器上访问：http://localhost:8500，显示的界面如下：
 
-![Consul主界面](https://upload-images.jianshu.io/upload_images/2279594-087c91873bfa1b67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Consul主界面](F:\GitDepository\学习文档\Spring Cloud\baseImages\consul.png)
 
 ---
 
@@ -210,7 +210,7 @@ server:
   port: 8081
 ~~~
 
-![Consul配置中心地址](https://upload-images.jianshu.io/upload_images/2279594-9064649b16ac4bf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Consul配置中心地址](F:\GitDepository\学习文档\Spring Cloud\baseImages\consul-config.png)
 
 ​	在consul-provider工程新建一个API，该API返回从consul 配置中心读取foo.bar的值，代码如下：
 

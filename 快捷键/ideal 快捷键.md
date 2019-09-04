@@ -28,15 +28,15 @@
 
     - 如果没有设置测试源根，则会造成我上述的问题，生成的test文件和文件会在同一文件夹下。
 
-      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12.jpg)
+      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\images\ideal 快捷键12.jpg)
 
     - 通过配置Content Root 【新增一个test文件夹在根目录下，并点击Mark as - Tests按钮，完成Add Content Root】
 
-      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12-2.jpg)
+      > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\images\ideal 快捷键12-2.jpg)
 
     #### 最后效果如下
 
-    > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\ideal 快捷键12-3.jpg)
+    > ![IDEA 自动生成Junit进行单元测试](F:\GitDepository\快捷键\images\ideal 快捷键12-3.jpg)
 
 13. 字符串转换大小写 alt +m
 

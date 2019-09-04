@@ -10,7 +10,7 @@
 
 
 
-![1566995030938](F:\GitDepository\学习文档\Spring Cloud\RPC调用.png)
+![1566995030938](F:\GitDepository\学习文档\Spring Cloud\baseImages\RPC调用.png)
 
 调用会涉及网络
 

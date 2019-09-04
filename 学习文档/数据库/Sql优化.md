@@ -6,7 +6,7 @@
 
 示例：`explain select * from t_slup_tmp`
 
-![1561686813595](D:\Typora文档\文档\学习文档\数据库\Explain.png)
+![1561686813595](F:\GitDepository\学习文档\数据库\images\Explain.png)
 
 + **id**，id相同时，执行顺序从上往下执行，id不同时，值越大越先被执行。
 + **select_type**，可以查看id的执行实例，共有以下几种类型：
@@ -46,15 +46,15 @@ EXPLAIN SELECT u.*, o.* FROM user_info u LEFT JOIN order_info o ON u.id = o.user
 
 ​		执行结果，type有ALL，并且没有索引：
 
-![img](D:\Typora文档\文档\学习文档\数据库\Explain优化1.png)
+![img](F:\GitDepository\学习文档\数据库\images\Explain优化1.png)
 
 ​		开始优化，在关联列上创建索引，明显看到type列的ALL变成ref，并且用到了索引，rows也从扫描9行变成了1行：
 
-![img](D:\Typora文档\文档\学习文档\数据库\Explain优化2.png)
+![img](F:\GitDepository\学习文档\数据库\images\Explain优化2.png)
 
 ​		这里面一般有个规律是：左连接索引加在右表上面，右连接索引加在左表上面。
 
-![img](D:\Typora文档\文档\学习文档\数据库\需要索引的情况.png)
+![img](F:\GitDepository\学习文档\数据库\images\需要索引的情况.png)
 
 ---
 
@@ -121,7 +121,7 @@ select colname … from A表 Left join B表 on where a.id = b.id and b.id is nul
 
 取出的结果集如下图表示，A表不在B表中的数据：
 
-![1561717021164](D:\Typora文档\文档\学习文档\数据库\Left join结果集.png)
+![1561717021164](F:\GitDepository\学习文档\数据库\images\Left join结果集.png)
 
 ### 10、使用合理的分页方式以提高分页的效率
 
@@ -140,7 +140,7 @@ select id,name from product where id> 866612 limit 20
 
 ​		在一些用户选择页面中，可能一些用户选择的时间范围过大，造成查询缓慢。主要的原因是扫描行数过多。这个时候可以通过程序，分段进行查询，循环遍历，将结果合并处理进行展示。
 
-![1561717180484](D:\Typora文档\文档\学习文档\数据库\分段查询.png)
+![1561717180484](F:\GitDepository\学习文档\数据库\images\分段查询.png)
 
 ### 12、避免在where子句中对字段进行null值判断
 
@@ -152,7 +152,7 @@ select id,name from product where id> 866612 limit 20
 
 ​	那如何查询%name%？如下图所示，虽然给secret字段添加了索引，但在explain结果并没有使用：
 
-![1561717261559](D:\Typora文档\文档\学习文档\数据库\前缀模糊查询1.png)
+![1561717261559](F:\GitDepository\学习文档\数据库\images\前缀模糊查询1.png)
 
 ​		那么如何解决这个问题呢，答案：使用全文索引。
 
@@ -197,7 +197,7 @@ select user_id,user_project from user_base where age=36/2;
 
 ### 19、关于JOIN优化<有专门一节介绍>
 
-![1561717493377](D:\Typora文档\文档\学习文档\数据库\Join示例图.png)
+![1561717493377](F:\GitDepository\学习文档\数据库\images\Join示例图.png)
 
 ​		LEFT JOIN A表为驱动表，INNER JOIN MySQL会自动找出那个数据少的表作用驱动表，RIGHT JOIN B表为驱动表。
 
@@ -219,7 +219,7 @@ select * from A left join B on B.name = A.namewhere B.name is nullunion allselec
 
 **4）利用小表去驱动大表：**
 
-​		![1561717586550](D:\Typora文档\文档\学习文档\数据库\小表驱动大表.png)
+​		![1561717586550](F:\GitDepository\学习文档\数据库\images\小表驱动大表.png)
 
 ​		从原理图能够直观的看出如果能够减少驱动表的话，减少嵌套循环中的循环次数，以减少 IO总量及CPU运算的次数。
 
@@ -227,6 +227,6 @@ select * from A left join B on B.name = A.namewhere B.name is nullunion allselec
 
 ​		inner join是由MySQL选择驱动表，但是有些特殊情况需要选择另个表作为驱动表，比如有group by、order by等「Using filesort」、「Using temporary」时。STRAIGHT_JOIN来强制连接顺序，在STRAIGHT_JOIN左边的表名就是驱动表，右边则是被驱动表。在使用STRAIGHT_JOIN有个前提条件是该查询是内连接，也就是inner join。其他链接不推荐使用STRAIGHT_JOIN，否则可能造成查询结果不准确。
 
-![1561717630578](D:\Typora文档\文档\学习文档\数据库\STRAIGHTJOIN.png)
+![1561717630578](F:\GitDepository\学习文档\数据库\images\STRAIGHTJOIN.png)
 
 这个方式有时能减少3倍的时间。
