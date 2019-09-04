@@ -25,6 +25,7 @@
 #### 1、自定义bridge网络
 
 ​	与docker0类似，我们可以自定义bridge网络，通过使用自定义bridge网络，我们就可以实现在一台host上的多个container之间的通信。他的网络模型如下(图片来自docker官网):
+![dddd](https://avatar-static.segmentfault.com/219/099/2190997279-1030000000094462_big64)
 
 ![img](https://github.com/yanglinAIwork/learngit/blob/master/%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/Docker/images/DockerNacosMysql.png)
 
